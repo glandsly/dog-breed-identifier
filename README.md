@@ -18,7 +18,7 @@ What is the best framework to use? (Tensorflow, Keras, etc.)
 
 What is the best way to break down our data into testing and training?
 
-## Further questions:
+## Further Questions:
 
 Can we expand to other animals?
 
