@@ -5,8 +5,8 @@
 from flask import *
 import os
 import pandas as pd
-import tensorflow as tf
-import keras
+#import tensorflow as tf
+#import keras
 from keras.models import load_model
 
 # instantiate flask 
@@ -75,7 +75,7 @@ def success():
 
 @app.route('/info', methods = ['POST'])  
 def info():
-	return render_template("info.html") 
+	return render_template("index.html") 
 
 # start the flask app, allow remote connections 
 app.run(host='0.0.0.0')
