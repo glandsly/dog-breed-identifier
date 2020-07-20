@@ -42,7 +42,7 @@
               <li class="dropdown"> 
                 <a href="/graphs">Visualizations</a></li>
                 <li><a href="/csv">CSV</a></li>
-                <li><a href="/result">Results</a></li>
+                <!-- <li><a href="/result">Results</a></li> -->
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -62,7 +62,10 @@
             <img src="/static/{{ filename }}">
             <h3>The Dog Breed is: {{ prediction }}</h3>
             <hr class="description-hr"/>
-            <p>Dog Breed Name: {{dog}} </p>
+            <h2>Upload your dog image!</h2>
+              <form method ='post' enctype=multipart/form-data>
+               <input type="file" name="file">
+               <input type="submit" value="upload">
           </article>
         </div>
     

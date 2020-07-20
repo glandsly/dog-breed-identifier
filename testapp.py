@@ -65,7 +65,7 @@ def upload_file():
             print(image_array)
             df = pd.read_csv('labels.csv')
             selected_breed_list = list(df.groupby('breed').count().sort_values(by='id', ascending=False).head(120).index)
-            model = load_model('2020-07-11_dog_breed_model.h5')
+            model = load_model('2020-07-19_dog_breed_model.h5')
             img = image.load_img(filepath, target_size=(299, 299))
             img_tensor = image.img_to_array(img)                    # (height, width, channels)
             img_tensor = np.expand_dims(img_tensor, axis=0)         # (1, height, width, channels), add a dimension because the model expects this shape: (batch_size, height, width, channels)
